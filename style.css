@@ -1,0 +1,87 @@
+/**
+Seletores
+    Class   .nomeclasse
+    Id      #idelemento
+    Tag     body
+*/
+
+:root {
+    --background-gray: #d3d3d3;
+    --background-blue: #00009b;
+    --font: "Arial", "Nunito", "sans-serif";
+    --color-orange: #ff4500;
+    --color-yellow: #fff000;
+}
+
+* {
+    font-family: var(--font);
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    background-color: #d4d3d3;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* flexbox */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;       /* 100% de altura em relação ao elemento pai (#header) */
+    padding: 0 1rem 0 12rem;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 5rem;
+    padding: 1rem 0 0 0;
+}
+
+.nav {
+    background-color: rgb(59, 59, 128);
+    height: 100%;        /* 100% de altura em relação ao elemento pai (#header) */
+    width: 8rem;
+}
+
+.nav-logo {
+    padding: 0.5rem 0 0.5rem 1rem;
+    color: #ffffff;
+    display: grid;
+}
+
+.nav-logo-icon {
+    font-size: 2.5rem !important;
+}
+
+.icon-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    font-size: 2rem !important;
+}
+
+
+.orange {
+    color: var(--color-orange)
+}
+
+.yellow {
+    color: var(--color-yellow)
+}
