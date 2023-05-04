@@ -11,6 +11,7 @@ Seletores
     --font: "Arial", "Nunito", "sans-serif";
     --color-orange: #ff4500;
     --color-yellow: #fff000;
+    --color-purple: rgb(59, 59, 128);
 }
 
 * {
@@ -51,11 +52,11 @@ a {
     height: 100vh;
     width: 5rem;
     padding: 1rem 0 0 0;
-    background-color: var(--background-blue);
+    background-color: var(--color-purple);
 }
 
 .nav {
-    /* background-color: rgb(59, 59, 128); */
+    background-color: var(--color-purple);
     height: 100%;     /*     100% de altura em relação ao elemento pai (#header) */
     /* width: 8rem; */
     flex-direction: column;
