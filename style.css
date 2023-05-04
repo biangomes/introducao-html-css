@@ -23,6 +23,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 #header {
@@ -50,18 +51,25 @@ a {
     height: 100vh;
     width: 5rem;
     padding: 1rem 0 0 0;
+    background-color: var(--background-blue);
 }
 
 .nav {
-    background-color: rgb(59, 59, 128);
-    height: 100%;        /* 100% de altura em relação ao elemento pai (#header) */
-    width: 8rem;
+    /* background-color: rgb(59, 59, 128); */
+    height: 100%;     /*     100% de altura em relação ao elemento pai (#header) */
+    /* width: 8rem; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-link, .nav-logo {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    color: #ffffff;
+    display: grid;
 }
 
 .nav-logo {
-    padding: 0.5rem 0 0.5rem 1rem;
-    color: #ffffff;
-    display: grid;
+    margin-bottom: 2rem;
 }
 
 .nav-logo-icon {
