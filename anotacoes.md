@@ -117,6 +117,13 @@ A responsividade é pela sintaxe abaixo:
 ```
 
 Para conseguir navegar pelo teclado usando a tecla `tab` precisa da sintaxe: 
+
 ```html
 <span tabindex="1" (...)></span>
+```
+
+Para ter texto alternativo, usar a sintaxe:
+
+```html
+<a aria-label="descrição básica" class="nav-link">
 ```
