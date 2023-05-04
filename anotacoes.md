@@ -108,3 +108,15 @@ Quando colocamos o código abaixo:
 estamos dizendo que o tamanho de fonte de `2rem` é mais importante do que o tamanho que ele herdou da classe (no caso o material-icons-outlined).
 
 Com o `display: grid;` conseguimos utilizar um grid container.
+
+A responsividade é pela sintaxe abaixo:
+
+```css
+@media screen and (max-width: 375px) {
+}
+```
+
+Para conseguir navegar pelo teclado usando a tecla `tab` precisa da sintaxe: 
+```html
+<span tabindex="1" (...)></span>
+```

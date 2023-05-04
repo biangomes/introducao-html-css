@@ -12,6 +12,9 @@ Seletores
     --color-orange: #ff4500;
     --color-yellow: #fff000;
     --color-purple: rgb(59, 59, 128);
+    --height-header: 4rem;
+    --width-header: 5rem;
+    --nav-height: 100%;
 }
 
 * {
@@ -29,7 +32,7 @@ a {
 
 #header {
     background-color: #d4d3d3;
-    height: 4rem;
+    height: var(--height-header);
     position: fixed;
     top: 0;
     left: 0;
@@ -50,14 +53,14 @@ a {
     left: 0;
     top: 0;
     height: 100vh;
-    width: 5rem;
+    width: var(--width-header);
     padding: 1rem 0 0 0;
     background-color: var(--color-purple);
 }
 
 .nav {
     background-color: var(--color-purple);
-    height: 100%;     /*     100% de altura em relação ao elemento pai (#header) */
+    height: var(--nav-height);     /*     100% de altura em relação ao elemento pai (#header) */
     /* width: 8rem; */
     flex-direction: column;
     justify-content: space-between;
@@ -93,4 +96,49 @@ a {
 
 .yellow {
     color: var(--color-yellow)
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--height-header) + 1rem);
+    margin-left: calc(var(--width-header) + 1rem);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 5px 0 rgba(0,0,0,0.3);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.card-image-header {
+    width: 100%;
+}
+
+.card-header h2 {
+    text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+    .navbar {
+        display: none;
+    }
+    
+    .container {
+        margin-left: 0px;
+    }
+
+    .header-content {
+        padding: 0 1rem 0 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .card {
+        max-width: 250px;
+    }
 }
